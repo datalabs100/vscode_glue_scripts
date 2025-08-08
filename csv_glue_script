@@ -52,4 +52,4 @@ for key in csv_files:
     # Clean up temp directory
     for obj in temp_objects.get("Contents", []):
         s3.delete_object(Bucket=output_bucket, Key=obj["Key"])
-print("✅ All CSV files converted to Parquet and saved with original filenames.")
+print(" All CSV files converted to Parquet and saved with original filenames.")
