@@ -79,4 +79,4 @@ for key in csv_files:
     for obj in temp_objects.get("Contents", []):
         s3.delete_object(Bucket=output_bucket, Key=obj["Key"])
 
-print("✅ All CSV files converted to Parquet with new folder structure.")
+print("✅ All CSV files converted to Parquet with folder structure.")
